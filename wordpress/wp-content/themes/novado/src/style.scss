@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$background: #EFF3F8;
+$white-bg: #FAFAFA;
+$box-shadow: 0px 4px 44px -1px rgba(0, 0, 0, 0.07);
+body{
+  font-family: 'Exo' !important;
+  font-style: normal;
+  .required label span{
+    color: red;
+  }
+  .site-content {
+    width: 100%;
+    background: $background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    h2{
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 28px;
+      color: #000000;
+    }
+    h3{
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 25px;
+      color: #686868;
+    }
+  }
+  main{
+    text-align: left;
+    background: $white-bg;
+    box-shadow: $box-shadow;
+    padding: 32px 63px;
+  }
+  .image-checklist{
+    //position: absolute;
+    //right: 0;
+    //text-align: right;
+  }
+  .tou{
+    padding: 24px 10px;
+  }
+  form[name=application]{
+    .row{
+      > div{
+        margin: 10px 0;
+      }
+    }
+    .form-floating>label{
+      left: 10px;
+    }
+    button[type=submit]{
+      background: #61A4D9;
+      border: 1px solid #4e92be;
+    }
+    button{
+      border-radius: 1px;
+      width: 173px;
+      height: 52px;
+      margin-top: 20px;
+      &:hover{
+        background: #0a0b0d;
+        letter-spacing: 0.1em;
+        -webkit-transition: letter-spacing .2s ease;
+        transition: letter-spacing .2s ease;
+      }
+    }
+  }
+
+
+}
+
+
+.headline{
+  font-family: 'Exo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 28px;
+
+  color: #B1BCCA;
+
+}
+
+.hidden{
+  display: none;
+}
+
+.error{
+  color: red
+}

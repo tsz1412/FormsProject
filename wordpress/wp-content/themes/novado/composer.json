@@ -1,0 +1,21 @@
+{
+    "name": "tsz/novado",
+    "description": "A theme for Novado Ecommerce Website",
+    "type": "theme",
+    "autoload": {
+        "psr-4": {
+            "Tsz\\Novado\\": "inc/",
+            "Tsz\\Novado\\Plugins\\ACF\\": "inc/plugins/acf/",
+            "Tsz\\Novado\\CPT\\": "inc/custom-types/",
+            "Tsz\\Novado\\Plugins\\Jetpack\\": "inc/plugins/jetpack/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tsviel",
+            "email": "tsviel@tsz.co.il"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
