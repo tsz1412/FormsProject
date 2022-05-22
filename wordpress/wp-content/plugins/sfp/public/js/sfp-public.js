@@ -35,6 +35,8 @@
 				// simple rule, converted to {required:true}
 				fname: "required",
 				lname: "required",
+				tou: "required",
+
 				// compound rule
 				email: {
 					required: true,
@@ -57,11 +59,13 @@
 					phone : $('input[name=phone]').val(),
 					email : $('input[name=email]').val(),
 					country : $('select[name=country] option:selected').val(),
-					date_of_birth : $('input[name=date]').val()
+					date_of_birth : $('input[name=date]').val(),
+					tou_agreement : $('input[name=tou]').is(':checked')?$('input[name=tou]').val():false
 				}
 				let ajax_url = myAjax.ajaxurl;
 				$.post( ajax_url, data, function(response) {
 					const res = JSON.parse(response);
+					console.log(res);
 					if(res.type == 'success'){
 						$('#form-content').addClass('hidden');
 						$('#form-success-message').removeClass('hidden');

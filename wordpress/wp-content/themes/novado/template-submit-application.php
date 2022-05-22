@@ -220,7 +220,7 @@ get_header();
     <main>
         <div class="container">
 
-            <form name="application" id="application">
+            <form name="application" id="application" method="post">
                 <div id="form-content" class="container">
                     <div class="row">
                         <h2><?= __('Personal Information', 'novado') ?></h2>
@@ -283,7 +283,7 @@ get_header();
                             <button type="submit" class="btn btn-primary">Submit></button>
                         </div>
                         <div class="image-checklist col-4">
-                            <img src="<?= trailingslashit(get_template_directory_uri()). 'assets/Image.svg' ?>" alt='sfsdf'>
+                            <img src="<?= trailingslashit(get_template_directory_uri()). 'assets/Image.svg' ?>" alt='sfsdf' width="301" height="281">
                         </div>
 
                     </div>

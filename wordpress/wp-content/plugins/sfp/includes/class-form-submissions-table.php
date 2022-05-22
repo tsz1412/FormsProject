@@ -37,7 +37,7 @@ class Form_Submissions_Table extends Forms_Submissions_Table_List {
             'phone'  => __( 'Phone Number', $this->text_domain ),
             'country'  => __( 'Country', $this->text_domain ),
             'date_of_birth'  => __( 'Date of Birth', $this->text_domain ),
-
+            'tou_agreement'  => __( 'Agreed to TOU?', $this->text_domain ),
 
 
         );
@@ -99,7 +99,15 @@ class Form_Submissions_Table extends Forms_Submissions_Table_List {
         }
 
     }
-
+    function column_tou_agreement($item)
+    {
+        if (($item['tou_agreement']) == 1){
+            return 'V';
+        }
+        else{
+            return 'X';
+        }
+    }
     /**
      * Populates the class fields for displaying the list of licenses.
      */

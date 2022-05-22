@@ -53,6 +53,7 @@ class Sfp_Activator {
                             `phone` varchar(50) NOT NULL,
                             `country` varchar(50) NOT NULL,
                             `date_of_birth` date NOT NULL,
+                            `tou_agreement` boolean NOT NULL,
                             `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
                             PRIMARY KEY (`id`)
                           ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;';

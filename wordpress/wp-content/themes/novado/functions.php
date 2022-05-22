@@ -176,8 +176,6 @@ function wp_bootstrap_starter_scripts() {
     wp_script_add_data( 'html5hiv', 'conditional', 'lt IE 9' );
     wp_enqueue_script( 'main-ltr', get_template_directory_uri() . '/dist/main.bundle.js', array(), '' );
 
-    wp_enqueue_script('ajax-props', get_template_directory_uri() . '/dist/ajax.bundle.js', array(), '' );
-    wp_localize_script( 'ajax-props', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));
     // Internet Explorer HTML5 support
     wp_enqueue_script( 'html5hiv',get_template_directory_uri().'/inc/assets/js/html5.js', array(), '3.7.0', false );
 

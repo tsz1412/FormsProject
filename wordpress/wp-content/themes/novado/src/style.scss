@@ -6,16 +6,17 @@ $box-shadow: 0px 4px 44px -1px rgba(0, 0, 0, 0.07);
 body{
   font-family: 'Exo' !important;
   font-style: normal;
+  background: $background;
+  padding: 4% 0;
   .required label span{
     color: red;
   }
   .site-content {
     width: 100%;
-    background: $background;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+
     h2{
       font-weight: 700;
       font-size: 21px;
@@ -68,6 +69,7 @@ body{
         transition: letter-spacing .2s ease;
       }
     }
+
   }
 
 
@@ -91,4 +93,11 @@ body{
 
 .error{
   color: red
+}
+@media (max-width: 640px){
+  .col-8{
+    width: 100% !important;
+  }
+  .image-checklist{
+  }
 }

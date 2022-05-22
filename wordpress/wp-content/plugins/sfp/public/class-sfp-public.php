@@ -73,6 +73,9 @@ class Sfp_Public {
 	public function enqueue_scripts() {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/sfp-public.js', array( 'jquery' ), $this->version, false );
+        wp_localize_script( $this->plugin_name, 'myAjax', array(
+            'ajaxurl'  => admin_url( 'admin-ajax.php' )
+        ));
 
     }
 
@@ -91,6 +94,7 @@ class Sfp_Public {
         $args['phone'] = sanitize_text_field($args['phone']);
         $args['country'] = sanitize_text_field($args['country']);
         $args['date_of_birth'] = sanitize_text_field($args['date_of_birth']);
+        $args['tou_agreement'] = boolval($args['tou_agreement']);
         unset($args['action']);
         $wpdb->insert($tableName, $args);
         $response['type'] = 'success';

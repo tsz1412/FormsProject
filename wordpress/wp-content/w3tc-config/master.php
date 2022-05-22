@@ -291,7 +291,7 @@
     "minify.symlinks": [],
     "minify.lifetime": 86400,
     "minify.upload": true,
-    "minify.html.enable": false,
+    "minify.html.enable": true,
     "minify.html.engine": "html",
     "minify.html.reject.feed": false,
     "minify.html.inline.css": false,
@@ -358,10 +358,18 @@
     "minify.htmltidy.options.hide-comments": true,
     "minify.htmltidy.options.wrap": 0,
     "minify.reject.logged": false,
-    "minify.reject.ua": [],
-    "minify.reject.uri": [],
-    "minify.reject.files.js": [],
-    "minify.reject.files.css": [],
+    "minify.reject.ua": [
+        ""
+    ],
+    "minify.reject.uri": [
+        ""
+    ],
+    "minify.reject.files.js": [
+        ""
+    ],
+    "minify.reject.files.css": [
+        ""
+    ],
     "minify.cache.files": [
         ""
     ],
@@ -555,18 +563,18 @@
     "browsercache.cssjs.cache.control": true,
     "browsercache.cssjs.cache.policy": "cache_public_maxage",
     "browsercache.cssjs.etag": true,
-    "browsercache.cssjs.w3tc": false,
+    "browsercache.cssjs.w3tc": true,
     "browsercache.cssjs.replace": false,
-    "browsercache.cssjs.querystring": false,
+    "browsercache.cssjs.querystring": true,
     "browsercache.html.compression": true,
     "browsercache.html.brotli": false,
     "browsercache.html.last_modified": true,
-    "browsercache.html.expires": false,
+    "browsercache.html.expires": true,
     "browsercache.html.lifetime": 3600,
     "browsercache.html.cache.control": true,
     "browsercache.html.cache.policy": "cache_public_maxage",
     "browsercache.html.etag": true,
-    "browsercache.html.w3tc": false,
+    "browsercache.html.w3tc": true,
     "browsercache.html.replace": false,
     "browsercache.other.last_modified": true,
     "browsercache.other.compression": true,
@@ -577,10 +585,12 @@
     "browsercache.other.cache.control": true,
     "browsercache.other.cache.policy": "cache_public_maxage",
     "browsercache.other.etag": true,
-    "browsercache.other.w3tc": false,
+    "browsercache.other.w3tc": true,
     "browsercache.other.replace": false,
-    "browsercache.other.querystring": false,
-    "browsercache.replace.exceptions": [],
+    "browsercache.other.querystring": true,
+    "browsercache.replace.exceptions": [
+        ""
+    ],
     "browsercache.security.session.cookie_httponly": "",
     "browsercache.security.session.cookie_secure": "",
     "browsercache.security.session.use_only_cookies": "",
@@ -598,7 +608,7 @@
     "browsercache.security.pkp.extra": "maxage",
     "browsercache.security.pkp.report.url": "",
     "browsercache.security.pkp.report.only": "0",
-    "browsercache.security.referrer.policy": "false",
+    "browsercache.security.referrer.policy": true,
     "browsercache.security.referrer.policy.directive": "no-referrer-when-downgrade",
     "browsercache.security.csp": false,
     "browsercache.security.csp.base": "",

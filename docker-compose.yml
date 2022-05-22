@@ -5,7 +5,7 @@ services:
     container_name: jfrog_nginx
     volumes:
        - ./wordpress:/var/www/html
-       - ./jfrog-dev.tszsol.com.conf:/etc/nginx/conf.d/jfrog-dev.tszsol.com.conf
+       - ./nginx/jfrog-dev.tszsol.com.conf:/etc/nginx/conf.d/jfrog-dev.tszsol.com.conf
 #       - ./prod-nginx.conf:/etc/nginx/nginx.conf
        - ./logs/:/var/log/nginx/
        - ./ssl/:/etc/nginx/ssl/
