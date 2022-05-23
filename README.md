@@ -9,7 +9,7 @@
 1. Place SSL keys provided in the email inside an SSL folder in the root folder of the project.
 2. Run `docker-compose up -d` from the root folder of the project
 3. Inside the local hosts file in your machine add the following record at the bottom of the file:
-   `jfrog-dev.tszsol.com 127.0.0.1`
+   `formproj-dev.tszsol.com 127.0.0.1`
     * File locations:
       * Windows: `c:\Windows\System32\Drivers\etc\hosts`. Use notepad to edit the file and save.
       * Mac/Linux: Run `sudo [nano/vi/vim] /etc/hosts`. Replace [nano/vi/vim] with your favorite cli editor
@@ -22,4 +22,4 @@ Username: `admin`
 Password: `123456`
 ## Docker Managment
 ### Take DB Backup
-docker exec site_mysql /usr/bin/mysqldump -u root --password=TFREo6Yh015OCVbtZsUN wp_mfa3u > backup.sql
+docker exec site_mysql /usr/bin/mysqldump -u root --password=rootpass wp_mfa3u > backup.sql
