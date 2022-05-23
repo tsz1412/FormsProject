@@ -6,7 +6,7 @@
 4. Install PHP composer globally to be able edit PHP dependencies
 5. Install latest stable version of Node to be able recompile JS files
 ## Instructions
-1. Place Shared Folder in the root of the project folder
+1. Place SSL keys provided in the email inside an SSL folder in the root folder of the project.
 2. Run `docker-compose up -d` from the root folder of the project
 3. Inside the local hosts file in your machine add the following record at the bottom of the file:
    `jfrog-dev.tszsol.com 127.0.0.1`
@@ -16,6 +16,10 @@
     * This must be done from your local hosts file. accessing the file from Ubuntu CLI installed on Windows machine <b> Won't work </b>
 4. Enjoy
 5. Upon finishing reviewing the project, run `docker-compose down` from the root folder of the project to stop all Docker containers
+## Wordpress Credentials
+Username: `admin`
+
+Password: `123456`
 ## Docker Managment
 ### Take DB Backup
 docker exec site_mysql /usr/bin/mysqldump -u root --password=TFREo6Yh015OCVbtZsUN wp_mfa3u > backup.sql
