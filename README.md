@@ -1,4 +1,4 @@
-# Useful Commands
+# Instructions
 ## Prerequesties
 1. Insure installation of Docker Program on pc/mac
 2. Turn off all NGINX/APACHE/MYSQL/PHP Proccess running on the local machine
